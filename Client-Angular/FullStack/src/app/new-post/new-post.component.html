@@ -1,0 +1,11 @@
+<h3>New Post </h3>
+<div class="main-container">
+  <form>
+    Title : <input type="text" class="post-input" #title >
+    <br>
+    Body : <input type="textarea" class="post-input" #body >
+    <br>
+    <input type="button" value="Cancel" (click)="navigatePage()"> &nbsp; <input type="button" value="Add" (click)="addPost(title.value , body.value)">
+  </form>
+
+</div>

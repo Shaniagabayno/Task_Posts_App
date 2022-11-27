@@ -1,0 +1,34 @@
+<div class="main-container">
+  <app-new-task
+    [userid]="userId"
+    [style.display]="!topDiv ? 'block' : 'none'"
+    (notify)="topDiv = $event"
+    [persons]="personData">
+  </app-new-task>
+
+  <app-todos
+    [style.display]="topDiv ? 'block' : 'none'"
+    (notify)="topDiv = $event"
+    (notify2)="personData = $event">
+  </app-todos>
+  
+</div>
+
+<br />
+
+<div class="main-container">
+  <app-new-post
+    [perData]="personData"
+    [perId]="userId"
+    [style.display]="!bottomDiv ? 'block' : 'none'"
+    (notify)="bottomDiv = $event"
+  >
+  </app-new-post>
+
+  <app-posts
+    [style.display]="bottomDiv ? 'block' : 'none'"
+    [persons]="personData"
+    (notify)="bottomDiv = $event"
+  >
+  </app-posts>
+</div>

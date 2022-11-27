@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+.main-container {
+  box-shadow: 1px 6px 12px #c5c5c5;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .post-input {
+    margin-bottom: 10px;
+    padding: 3px ;
+    font-size:16px;
+  }
+
+  input[type=button]{
+    font-family: 'Quicksand', sans-serif;
+    padding: 7px;
+    width: 15%;
+    background:#fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px 1px#C8C8C8;
+    cursor: pointer;
+  }

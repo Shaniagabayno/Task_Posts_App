@@ -1,0 +1,17 @@
+<div class="userDiv">
+  Search :
+  <input type="text" #search (keyup)="searchUser(search.value)" /> &nbsp;
+  <input type="button" class="searchBtn" value="Add" (click)="anotherPage()" />
+
+  <br />
+  <br />
+  <app-users
+    *ngFor="let user of usersToShow; let i = index"
+    [userId]="user._id"
+    [personData]="user"
+  ></app-users>
+</div>
+
+<div class="todos-postsDiv">
+  <router-outlet></router-outlet>
+</div>

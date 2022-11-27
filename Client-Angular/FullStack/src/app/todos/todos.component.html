@@ -1,0 +1,12 @@
+<span>Todos-User</span> &nbsp; <input type="button" class="add-btn" value="Add task" (click)="addTask()">
+
+<div class="container">
+  <div class="inner-container" *ngFor="let task of persons.Tasks">
+    Title :{{task.Title}}
+    <br>
+
+    Completed :{{task.Completed}} &nbsp; <input type="button" *ngIf="!task.Completed" value="Mark Completed"
+      class="task-btn" (click)="markCompleted(task._id)">
+
+  </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="mainDiv">
+  <div
+    [style.border]="
+		!isTasksCompleted ? '4px double #d19494' : '3px double #99b299'"
+    [ngClass]="[divStyle]"
+    class="innerDiv">
+    <br />
+   Id:
+    <span>
+    <a (click)="NavigatePage()">
+     {{ userId }}</a></span>
+    <br />
+    <br />
+
+    Name: <input type="text" name="Name" #name [(ngModel)]="personData.Name" />
+    <br /><br />
+    Email:
+    <input type="text" name="Email" #email [(ngModel)]="personData.Email" />
+    <br />
+    <br />
+    <div class="buttons-section">
+      <br />
+      <input
+        type="button"
+        value="Other Data"
+        (mouseover)="showDiv = true"
+        (click)="showDiv = false"
+      />
+      <div *ngIf="showDiv" [style.visibility]="showDiv ? 'visible' : 'hidden'">
+        <br />
+        Street:
+        <input type="text" name="street" [(ngModel)]="personData.Street" />
+        <br />
+				<br />
+        City:
+        <input
+          type="text"
+          name="city"
+          [(ngModel)]="personData.City"/>
+				<br /><br />
+        Zipcode:
+        <input
+          type="text"
+          name="zipcode"
+          [(ngModel)]="personData.Zipcode"/>
+				<br /><br />
+      </div>
+      &nbsp;
+      <input type="button" value="Update" (click)="updateUser()" /> &nbsp;
+      <input type="button" value="Delete" (click)="deleteUser(userId)" />
+    </div>
+  </div>
+
+  <br /><br />
+</div>

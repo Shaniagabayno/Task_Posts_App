@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+.container {
+  box-shadow: 1px 6px 12px #c5c5c5;
+  padding: 10px;
+  margin-top: 30px;
+
+}
+
+.inner-container {
+  border: 1px solid black;
+  margin: 20px;
+  padding: 16px;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.add-btn {
+  margin-left: 300px;
+  font-family: 'Aboreto', cursive;
+  padding: 10px;
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px 1px#C8C8C8;
+  cursor: pointer;
+}
+
+span {
+  font-size: 19px;
+}

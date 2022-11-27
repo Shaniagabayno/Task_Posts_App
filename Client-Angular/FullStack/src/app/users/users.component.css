@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+.mainDiv {
+  margin: 20px;
+}
+
+.innerDiv {
+  text-align: center;
+  padding: 20px;
+}
+
+.div-change {
+  background: linear-gradient(to bottom left, #ff8d54 -15%, #ffffff 79%);
+}
+
+span a {
+  text-decoration: none;
+  color: black;
+}
+
+input[type=text] {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  padding: 4px;
+  border: none;
+  border-bottom: 1px solid black;
+
+}
+
+input[type=button] {
+  font-family: 'Quicksand', sans-serif;
+  padding: 7px;
+  width: 15%;
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px 1px#C8C8C8;
+  cursor: pointer;
+}

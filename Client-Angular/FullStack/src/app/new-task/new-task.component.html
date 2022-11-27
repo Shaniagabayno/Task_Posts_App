@@ -1,0 +1,11 @@
+<h3>New Task </h3>
+<div class="main-container">
+  <form>
+    Title : <input type="text" class="task-input" #title >
+    <br>
+    <input type="button" value="Cancel" (click)="navigatePage()"> &nbsp; <input type="button" value="Add"
+      (click)="addTask(title.value)">
+   
+  </form>
+
+</div>

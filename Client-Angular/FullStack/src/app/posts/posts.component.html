@@ -1,0 +1,8 @@
+<span class="title">Post-User</span> &nbsp; <input type="button" class="add-btn" value="Add post" (click)="addPost()">
+<div class="container">
+  <br>
+  <div *ngFor="let post of persons.Posts" class="inner-container">
+    Title :{{post.Title}} <br>
+    Body :{{post.Body}}
+  </div>
+</div>

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+* {
+  font-family: 'Aboreto', cursive;
+}
+
+.userDiv {
+  width: 50%;
+  float: left;
+}
+
+.todos-postsDiv {
+  float: right;
+  width: 50%;
+}
+
+.searchBtn {
+  padding: 7px;
+  width: 15%;
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 3px 3px 2px#C8C8C8;
+  margin-left: 30%;
+  cursor: pointer;
+}
+
+input[type=text] {
+  padding: 4px;
+  font-size: 16px;
+  border: hidden;
+  border-bottom: 1px solid black;
+}
